@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import styles from './Home.css';
-
+import Header from './Header';
+import WorkArea from './WorkArea';
+import Footer from './Footer';
 
 export default class Home extends Component {
   render() {
     return (
       <div>
         <div className={styles.container}>
-          <h2>Home</h2>
-          <Link to="/counter">to Counter</Link>
+          <Header />
+          <WorkArea />
+          <Footer />
         </div>
       </div>
     );
